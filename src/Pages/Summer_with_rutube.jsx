@@ -42,7 +42,7 @@ const Summer_with_rutube = () => {
           className={` h-[511.16px]  bg-contain bg-gradient-to-b from-white z-10 to-[rgba(0,0,0,.5)] w-full relative grad rounded-[8px] flex items-end  `}
         >
           <img
-            src="/public/big_img.png"
+            src="/big_img.png"
             className=" z-[0] absolute rounded-[8px]  "
             alt="img"
           />
