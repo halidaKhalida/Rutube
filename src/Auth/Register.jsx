@@ -43,40 +43,44 @@ const Register = () => {
   };
 
   return (
-    <div className=" flex justify-center h-screen items-center  ">
-      <div>
-        <h2>Register</h2>
+    <div className=" flex justify-center  h-screen items-center bg-[#14191F]  ">
+      <div className=" w-[404px] h-[484px] bg-[#29333D] flex flex-col items-center justify-center rounded-[16px] ">
+        <h2 className=" text-white text-[24px] font-medium items-center mt-[56px] ">Регистрация</h2>
         <form
           onSubmit={handleData}
-          className="flex flex-col p-5 shadow-lg rounded-md gap-2  "
+          className="flex flex-col w-full h-full p-5 rounded-md gap-2 items-center mt-[16px]  "
         >
           <input
-            className=" border-2  border-gray-500 "
+            className=" w-[322px] h-[38px] border-[1px] border-[#3D4A58] rounded-[6px] px-[11px] placeholder:text-[14px] text-white text-[13px] bg-[#1C232B] "
             type="text"
-            placeholder="full name"
+            placeholder="Имя"
             name="fullName"
           />
           <input
-            className=" border-2  border-gray-500 "
+            className=" w-[322px] h-[38px] border-[1px] border-[#3D4A58] rounded-[6px] px-[11px] placeholder:text-[14px] text-white text-[13px] bg-[#1C232B] "
             type="email"
-            placeholder="email"
+            placeholder="Введите свою почту"
             name="email"
           />
           <input
-            className=" border-2  border-gray-500 "
+            className=" w-[322px] h-[38px] border-[1px] border-[#3D4A58] rounded-[6px] px-[11px] placeholder:text-[14px] text-white text-[13px] bg-[#1C232B] "
             type="password"
-            placeholder="password"
+            placeholder="Пароль"
             name="password"
           />
           <input
-            className=" border-2  border-gray-500 "
+            className=" w-[322px] h-[38px] border-[1px] border-[#3D4A58] rounded-[6px] px-[11px] placeholder:text-[14px] text-white text-[13px] bg-[#1C232B] "
             type="password"
-            placeholder="retype password"
+            placeholder="Повторите пароль"
             name="retypePassword"
           />
           <p className=" text-red-500  ">{errorMsg}</p>
+          <div className=" w-[322px] ">
+          <p className=" text-[#889BAF] text-[10px] mt-[16px] w-[280px] ">Регистрируясь на RUTUBE, вы соглашаетесь с <a className=" underline  " href="https://rutube.ru/info/agreement/">пользовательским соглашением</a> и <a className=" underline   " href="https://rutube.ru/info/privacy/">политикой конфиденциальности</a></p>
+          </div>
           
-          <button className="  bg-green-500 text-white   ">register</button>
+          
+          <button className="  bg-[#29333D] text-[#00A1E7] text-[15px] mt-[32px]   ">Войти</button>
          
         </form>
       </div>

@@ -6,7 +6,7 @@ import { AuthContext } from "./Context/AuthContext";
 function App() {
   const { isAuth } = useContext(AuthContext);
 
-  return <div>{isAuth ? <PrivateRoutest /> : <PublicRoutest />}</div>;
+  return <div className="  ">{isAuth ? <PrivateRoutest /> : <PublicRoutest />}</div>;
 }
 
 export default App;

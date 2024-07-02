@@ -6,7 +6,7 @@ import Entrance from "../Auth/Entrance"
 
 
 const PublicRoutest = () => {
-  return (<div>
+  return (<div className="   ">
     <Routes>
       <Route path="/" element={<Entrance/>}/>
       <Route path="/login" element={<Login/>}/>
