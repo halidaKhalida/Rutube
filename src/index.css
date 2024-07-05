@@ -77,6 +77,13 @@ video{
     border-radius: 6px;
 }
 
+.swiper-button-prev:after{
+    content:none;
+}
+
+.swiper-button-next:after{
+    content:none;
+}
 
 .swiper-button-prev::after{
     width: 24px;
