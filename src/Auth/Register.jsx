@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
   const [errorMsg, setErrorMsg] = useState("");
-  const {setIsAuth} = useContext(AuthContext)
+  const {setIsAuth,isAuth} = useContext(AuthContext)
 
   const postData = async (data) => {
     try {
@@ -78,10 +78,14 @@ const Register = () => {
           <div className=" w-[322px] ">
           <p className=" text-[#889BAF] text-[10px] mt-[16px] w-[280px] ">Регистрируясь на RUTUBE, вы соглашаетесь с <a className=" underline  " href="https://rutube.ru/info/agreement/">пользовательским соглашением</a> и <a className=" underline   " href="https://rutube.ru/info/privacy/">политикой конфиденциальности</a></p>
           </div>
-          
-          
+          {
+            isAuth?<Link to={"/"}>
           <button className="  bg-[#29333D] text-[#00A1E7] text-[15px] mt-[32px]   ">Войти</button>
-         
+            </Link>:
+          <button className="  bg-[#29333D] text-[#00A1E7] text-[15px] mt-[32px]   ">Войти</button>
+            
+          }
+          
         </form>
       </div>
     </div>

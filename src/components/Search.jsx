@@ -9,7 +9,7 @@ const Search = () => {
   const { search } = useLocation();
   let searchText = search.slice(3)
   const {searchs,setSearchs} = useContext(ProductContext)
-  const handleSearch = (e) => {
+  const handleSearchs = (e) => {
     e.preventDefault();
     let value = e.target.search.value;
     navigate(`/search?q=${value}`);
@@ -17,7 +17,7 @@ const Search = () => {
 
   return (
     <div>
-      <form onSubmit={handleSearch} className=" flex items-center ">
+      <form onSubmit={handleSearchs} className=" flex items-center ">
         <div className=" flex w-[344px] h-[40px] items-center border border-[#29333D] rounded-[6px] px-[16px] py-[8px] ">
           <img
             onClick={() => navigate(`/search`)}
