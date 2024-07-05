@@ -70,7 +70,7 @@ video{
 }
 
 .swiper-button-prev{
-    
+    content:none;
     width: 40px;
     height: 40px;
     background-color: #29333D;
@@ -106,6 +106,7 @@ video{
     height: 40px;
     background-color: #29333D;
     border-radius: 6px;
+    content:none;
 }
 .swiper-button-next::after{
     width: 24px;
